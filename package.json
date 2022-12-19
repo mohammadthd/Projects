@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1",
+    "emailjs-com": "^3.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scroll": "^1.8.7"
+  }
+}

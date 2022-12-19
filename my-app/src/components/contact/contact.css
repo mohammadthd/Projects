@@ -1,0 +1,183 @@
+.c {
+  height: 100vh;
+  position: relative;
+}
+
+.c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: #59b256;
+  position: absolute;
+}
+
+.c-wrapper {
+  padding: 50px;
+  display: flex;
+}
+
+.c-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.c-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-title {
+  font-size: 60px;
+  width: 80%;
+  margin-bottom: 60px;
+  
+}
+.c-info{
+display: flex;
+flex-direction: column;
+
+margin-bottom: 4rem;
+
+
+
+}
+.c-info-item {
+  display: flex;
+  
+  align-items: center;
+  padding: 25px;
+  font-weight: 300;
+  width: 70%;
+  margin-right: 250px;
+  
+}
+
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.c-desc {
+  font-weight: 200;
+  margin-right: 10rem;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid white;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.473);
+  
+}
+.textarea::placeholder {
+  color: rgba(255, 255, 255, 0.473);
+}
+
+.textarea {
+  width: 50%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  
+}
+
+.f input {
+  outline: none;
+  
+}
+textarea {
+  outline: none;
+}
+.s-wrapper {
+  display: flex;
+  width: 45rem;
+  gap: 1rem;
+}
+
+form .s {
+  margin-top: 25px;
+}
+.b-s button {
+  background-color: #002a55;
+  opacity: 0.5;
+  cursor: unset;
+  border: 1px white solid;
+}
+.a-s button {
+  background-color: #002a55;
+  border: 1px white solid;
+}
+
+.c-info-item p {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .c{
+    width: 100%;
+  height: auto;
+ 
+  }
+.c-wrapper{
+  display: flex;
+  flex-direction: column;
+  
+}
+.c-info{
+  width: 100%;
+  margin-left: 5%;
+}
+.c-right{
+ 
+  margin-left: 10%;
+}
+.bi{
+  font-size: 20%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+.c-desc{
+  width: 50%;
+  
+}
+.c-wrapper{
+  display: flex;
+  flex-direction: column;
+  
+
+
+}
+
+}
