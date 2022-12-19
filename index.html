@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>To do list</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <input type="text" class="text" placeholder="Add a task">
+        <div class="notcompleted">
+            <h4>I'll do...</h4>
+            
+        </div>
+<div class="completed">
+    <h4>I did it.</h4>
+     
+</div>
+    </div>
+
+    <script>
+
+
+$(".text").on("click", function(e){
+    $(document).on('keypress',function(e) {
+    if(e.which == 13 && $(".text").val() !="") 
+    {
+        var task = $("<div class='task'></div>").text($(".text").val());
+        var del = $("<i class='fa-solid fa-trash'></i>").click(function(){
+            var p =$(this).parent();
+            p.fadeOut(function(){
+                p.remove();
+            });
+        });
+        var check = $("<i class='fa-solid fa-check'></i>").click(function(){
+            var p =$(this).parent();
+            p.fadeOut(function(){
+                $(".completed").append(p);
+                p.fadeIn(1);
+            });
+            $(this).remove();
+        });
+            task.append(del,check);
+        $(".notcompleted").append(task);
+        //to clear the input
+        $(".text").val("");
+       }
+});
+});
+
+
+
+
+    </script>
+
+
+
+    
+
+
+
+    
+</body>
+</html>
